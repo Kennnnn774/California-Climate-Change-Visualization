@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<title>Data Visualization Project</title>
+
+	<link href="./styles/style.css" rel="stylesheet" />
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/us/us-ca-all.js"></script>
+
+
+	<script src="./scripts/main.js"></script>
+</head>
+
+<body>
+	<img src='pics/fire_updated.png' alt='California Fire Picture' width="100%" margin='0'>
+	<p> This project is for the DSC106 course final presentation @SP 20. Made by Jeffrey Feng, Yujian He.
+		<a
+			href=' https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/shutterstock_710588224.jpg?crop=0,700,6000,3300&wid=4000&hei=2200&scl=1.5'>
+			Cover picture</a></p>
+
+
+	<br><br><br>
+
+	<h1> Temperature Records in the State of California</h1>
+
+	<br><br><br>
+
+	<section id="summaryCharts" class="chart-parent--container">
+		<section id="summerTemp" class="chart--container"></section>
+		<section class="chart--container">
+			<h2 class='myText'><b>Summers are getting hotter. </b><br>
+
+				Every average Summer temperature of the years from 2000 to 2010 has surpassed the average summer
+				temperature
+				of the <b>entire 21st century</b>, which is is 22.16°C (71.89°F).
+			</h2>
+		</section>
+	</section>
+
+	<section id="summaryCharts" class="chart-parent--container">
+		<section class="chart--container">
+			<h2 class='myText'>
+				Similarly, <br>
+				Average temperature of the <b>whole year</b> has been rising for decades as well.
+			</h2>
+		</section>
+		<section id="yearTemp" class="chart--container"></section>
+	</section>
+	<br><br>
+
+	<h1>Wild fires in California throughout the past century</h1><br><br>
+
+	<details>
+		<summary style='margin-left: 3%; font-size: large;'><u>Click to see the full table, ordered by acres destroyed.</u>
+		</summary>
+		<br>
+		<form>
+			<fieldset>
+				<table>
+					<tr>
+						<td>fire_name</td>
+						<td>cause</td>
+						<td>month</td>
+						<td>year</td>
+						<td>county</td>
+						<td>acres</td>
+						<td>structures</td>
+						<td>deaths</td>
+					</tr>
+					<tr>
+						<td>Mendocino Complex</td>
+						<td>Under Investigation</td>
+						<td>July</td>
+						<td>2018</td>
+						<td>Colusa County, Lake County, Mendocino County & Glenn County</td>
+						<td>459123</td>
+						<td>280</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Thomas</td>
+						<td>Powerlines</td>
+						<td>December</td>
+						<td>2017</td>
+						<td>Ventura & Santa Barbara</td>
+						<td>281893</td>
+						<td>1063</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Cedar</td>
+						<td>Human Related</td>
+						<td>October</td>
+						<td>2003</td>
+						<td>San Diego</td>
+						<td>273246</td>
+						<td>2820</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>Rush</td>
+						<td>Lightning</td>
+						<td>August</td>
+						<td>2012</td>
+						<td>Lassen</td>
+						<td>271911</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Rim</td>
+						<td>Human Related</td>
+						<td>August</td>
+						<td>2013</td>
+						<td>Tuolumne</td>
+						<td>257314</td>
+						<td>112</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Zaca</td>
+						<td>Human Related</td>
+						<td>July</td>
+						<td>2007</td>
+						<td>Santa Barbara</td>
+						<td>240207</td>
+						<td>1</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Carr</td>
+						<td>Human Related</td>
+						<td>July</td>
+						<td>2018</td>
+						<td>Shasta County,Trinity County</td>
+						<td>229651</td>
+						<td>1614</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Matilija</td>
+						<td>Undetermined</td>
+						<td>September</td>
+						<td>1932</td>
+						<td>Ventura</td>
+						<td>220000</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Witch</td>
+						<td>Powerlines</td>
+						<td>October</td>
+						<td>2007</td>
+						<td>San Diego</td>
+						<td>197990</td>
+						<td>1650</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Klamath Theater Complex</td>
+						<td>Lightning</td>
+						<td>June</td>
+						<td>2008</td>
+						<td>Siskiyou</td>
+						<td>192038</td>
+						<td>0</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Marble Cone</td>
+						<td>Lightning</td>
+						<td>July</td>
+						<td>1977</td>
+						<td>Monterey</td>
+						<td>177866</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Laguna</td>
+						<td>Powerlines</td>
+						<td>September</td>
+						<td>1970</td>
+						<td>San Diego</td>
+						<td>175425</td>
+						<td>382</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>Basin Complex</td>
+						<td>Lightning</td>
+						<td>June</td>
+						<td>2008</td>
+						<td>Monterey</td>
+						<td>162818</td>
+						<td>58</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Day Fire</td>
+						<td>Human Related</td>
+						<td>September</td>
+						<td>2006</td>
+						<td>Ventura</td>
+						<td>162702</td>
+						<td>11</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Station</td>
+						<td>Human Related</td>
+						<td>August</td>
+						<td>2009</td>
+						<td>Los Angeles</td>
+						<td>160557</td>
+						<td>209</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Camp Fire</td>
+						<td>Powerlines</td>
+						<td>November</td>
+						<td>2018</td>
+						<td>Butte</td>
+						<td>153336</td>
+						<td>18804</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>Rough</td>
+						<td>Lightning</td>
+						<td>July</td>
+						<td>2015</td>
+						<td>Fresno</td>
+						<td>151623</td>
+						<td>4</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Mcnally</td>
+						<td>Human Related</td>
+						<td>July</td>
+						<td>2002</td>
+						<td>Tulare</td>
+						<td>150696</td>
+						<td>17</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Stanislaus Complex</td>
+						<td>Lightning</td>
+						<td>August</td>
+						<td>1987</td>
+						<td>Tuolumne</td>
+						<td>145980</td>
+						<td>28</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Big Bar Complex</td>
+						<td>Lightning</td>
+						<td>August</td>
+						<td>1999</td>
+						<td>Trinity</td>
+						<td>140948</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+
+	</details>
+	<p style="margin-left: 3%;"> The dataset is found through <a
+			href=https://www.kaggle.com/annieichen/top-20-largest-california-wildfires>
+			Kaggle.com</a>, and the original data was from <a
+			href='https://www.fire.ca.gov/media/5510/top20_acres.pdf'>fire.ca.gov</a>
+		<br><br>
+		The following data visualization are based on these data.</p>
+
+
+	<section id="summaryCharts" class="chart-parent--container">
+		<section id="summerTemp" class="chart--container">
+			<h2 class='myText'>
+				Exploring the causes of these fires: <br>
+				We found that the majority of the causes are human, power, and powerlines. <br>
+				There is only 10% of the fires that have unknown cause.
+			</h2>
+		</section>
+		<!-- why does my partner name this id baby..... -->
+		<section id = 'baby' class="chart--container"></section>
+	</section>
+
+
+	<section id="yearChart" class="chart-parent--container">
+	</section>
+	<h2 class='myText2'>75% of the 20 most destructive wildfires happened after 2000, including the most destrustive five.</h2>
+	<br><br>
+
+	<h1>How large are the areas destructed by each fire?</h1>
+	<h3 style='text-align: center; font-weight: normal;'>Click on the colored part of the map to check area comparison.</h3><br><br>
+
+	<section id="mapthing">
+		<div id="myMap"></div>
+		<div id='area_comparison'>
+			<span>Fire Name:  &nbsp; &nbsp; &nbsp; </span><output id="picfirename"></output>
+			<br><br><br><br>
+			<output id="compare1"></output>
+			<img src='pics/download.jpg' width="40%" class="responsive">
+			<br>
+			<output style="margin:100px; font-weight: bold;">Soccer Field</out>
+				<br><br><br><br>
+				<output id="compare2"></output>
+				<img src='pics/ucsdlogo.png' width="40%" class="responsive">
+				<br>
+				<output style="margin:100px; font-weight: bold;">UCSD Campus</out>
+					<br><br><br><br>
+					<output id="compare3"></output>
+					<img src='pics/golden gate b.jpg' width="40%" height = "15%" class="responsive1">
+					<br>
+					<output style="margin:100px; font-weight: bold;">City of San francisco</out>
+						<br><br>
+						<div id="bottonthing">
+							<button type="button" id="botton3" style="margin:40px;">fire1</button>
+							<button type="button" id="botton1" style="margin:40px;">fire2</button>
+							<button type="button" id="botton2" style="margin:40px;">fire3</button>
+						</div>
+		</div>
+	</section>
+
+	<div id="ice_name_card">Selected County: &nbsp;<span id='ice'>Los Angeles</span></div>
+	<section id="ice_stats">
+	</section>
+	<hr />
+	<section id="fire_stats">
+		<section id="fire_name_card">
+			<h3>Fire Name</h3>
+			<output id="fire_name">Station</output>
+		</section>
+
+		<section id="time_card">
+			<h3>Time</h3>
+			<output id="time">08/2009</output>
+		</section>
+
+		<section id="acres_card">
+			<h3>Acres Destroyed</h3>
+			<output id="acres">160557</output>
+		</section>
+
+		<section id="structure_card">
+			<h3>Structures Destroyed</h3>
+			<output id="structure">209</output>
+		</section>
+	</section>
+
+
+	<hr />
+	<div style='margin-bottom: 5%; margin-left: 3%; margin-top: 3%;'>
+	<u>Credit:</u><br>
+	Design/Idea from DSC106 Homework<br>
+	HighChart<br><br>
+
+	<u>Creidt/Resources used:</u><br>
+	https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data?select=GlobalTemperatures.csv <br>
+	https://www.kaggle.com/annieichen/top-20-largest-california-wildfires<br>
+	https://www.fire.ca.gov/media/5510/top20_acres.pdf<br><br>
+
+	<u>Pictures used:</u><br>
+	<a href= 'https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/shutterstock_710588224.jpg?crop=0,700,6000,3300&wid=4000&hei=2200&scl=1.5'>Cover Picture</a> <br>
+	<a href ='https://image.jimcdn.com/app/cms/image/transf/dimension=884x1024:format=png/path/s5d08e0e337708e6b/image/i1d36ee6a79a6d7d6/version/1559730030/image.png'>Soccer field</a><br>
+	<a href = 'https://i.pinimg.com/originals/b6/0c/de/b60cdeca52df3b882a12e9b7f38dae16.jpg'>City of SF</a>
+</div>
+
+</body>
+
+</html>

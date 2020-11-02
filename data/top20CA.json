@@ -1,0 +1,202 @@
+[
+  {
+    "fire_name": "Mendocino Complex",
+    "cause": "Under Investigation",
+    "month": "July",
+    "year": 2018,
+    "county": "Colusa County, Lake County, Mendocino County & Glenn County",
+    "acres": 459123,
+    "structures": 280,
+    "deaths": 1
+  },
+  {
+    "fire_name": "Thomas",
+    "cause": "Powerlines",
+    "month": "December",
+    "year": 2017,
+    "county": "Ventura & Santa Barbara",
+    "acres": 281893,
+    "structures": 1063,
+    "deaths": 2
+  },
+  {
+    "fire_name": "Cedar",
+    "cause": "Human Related",
+    "month": "October",
+    "year": 2003,
+    "county": "San Diego",
+    "acres": 273246,
+    "structures": 2820,
+    "deaths": 15
+  },
+  {
+    "fire_name": "Rush",
+    "cause": "Lightning",
+    "month": "August",
+    "year": 2012,
+    "county": "Lassen",
+    "acres": 271911,
+    "structures": 0,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Rim",
+    "cause": "Human Related",
+    "month": "August",
+    "year": 2013,
+    "county": "Tuolumne",
+    "acres": 257314,
+    "structures": 112,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Zaca",
+    "cause": "Human Related",
+    "month": "July",
+    "year": 2007,
+    "county": "Santa Barbara",
+    "acres": 240207,
+    "structures": 1,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Carr",
+    "cause": "Human Related",
+    "month": "July",
+    "year": 2018,
+    "county": "Shasta County,Trinity County",
+    "acres": 229651,
+    "structures": 1614,
+    "deaths": 8
+  },
+  {
+    "fire_name": "Matilija",
+    "cause": "Undetermined",
+    "month": "September",
+    "year": 1932,
+    "county": "Ventura",
+    "acres": 220000,
+    "structures": 0,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Witch",
+    "cause": "Powerlines",
+    "month": "October",
+    "year": 2007,
+    "county": "San Diego",
+    "acres": 197990,
+    "structures": 1650,
+    "deaths": 2
+  },
+  {
+    "fire_name": "Klamath Theater Complex",
+    "cause": "Lightning",
+    "month": "June",
+    "year": 2008,
+    "county": "Siskiyou",
+    "acres": 192038,
+    "structures": 0,
+    "deaths": 2
+  },
+  {
+    "fire_name": "Marble Cone",
+    "cause": "Lightning",
+    "month": "July",
+    "year": 1977,
+    "county": "Monterey",
+    "acres": 177866,
+    "structures": 0,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Laguna",
+    "cause": "Powerlines",
+    "month": "September",
+    "year": 1970,
+    "county": "San Diego",
+    "acres": 175425,
+    "structures": 382,
+    "deaths": 5
+  },
+  {
+    "fire_name": "Basin Complex",
+    "cause": "Lightning",
+    "month": "June",
+    "year": 2008,
+    "county": "Monterey",
+    "acres": 162818,
+    "structures": 58,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Day Fire",
+    "cause": "Human Related",
+    "month": "September",
+    "year": 2006,
+    "county": "Ventura",
+    "acres": 162702,
+    "structures": 11,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Station",
+    "cause": "Human Related",
+    "month": "August",
+    "year": 2009,
+    "county": "Los Angeles",
+    "acres": 160557,
+    "structures": 209,
+    "deaths": 2
+  },
+  {
+    "fire_name": "Camp Fire",
+    "cause": "Powerlines",
+    "month": "November",
+    "year": 2018,
+    "county": "Butte",
+    "acres": 153336,
+    "structures": 18804,
+    "deaths": 85
+  },
+  {
+    "fire_name": "Rough",
+    "cause": "Lightning",
+    "month": "July",
+    "year": 2015,
+    "county": "Fresno",
+    "acres": 151623,
+    "structures": 4,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Mcnally",
+    "cause": "Human Related",
+    "month": "July",
+    "year": 2002,
+    "county": "Tulare",
+    "acres": 150696,
+    "structures": 17,
+    "deaths": 0
+  },
+  {
+    "fire_name": "Stanislaus Complex",
+    "cause": "Lightning",
+    "month": "August",
+    "year": 1987,
+    "county": "Tuolumne",
+    "acres": 145980,
+    "structures": 28,
+    "deaths": 1
+  },
+  {
+    "fire_name": "Big Bar Complex",
+    "cause": "Lightning",
+    "month": "August",
+    "year": 1999,
+    "county": "Trinity",
+    "acres": 140948,
+    "structures": 0,
+    "deaths": 0
+  }
+]
